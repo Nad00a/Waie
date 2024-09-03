@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function navigate() {
+            window.location.href = 'gender.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="assets/logo.png" alt="Logo">
+    </div>
+    <div class="login-container">
+        <h2>Log In</h2>
+        <p class="subtext">Sign in to continue</p>
+        <form>
+            <label for="username">Name</label>
+            <input type="text" id="username" name="username" placeholder="Username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+
+            <button type="submit" class="submit" onclick="window.location.href='gender.html'">Sign In</button>
+        </form>
+        <a href="#" class="forgot-password">Forget password?</a>
+        <a href="signup.html" class="sign-up">Sign up</a>
+    </div>
+</body>
+</html>
